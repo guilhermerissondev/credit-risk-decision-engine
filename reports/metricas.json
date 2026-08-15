@@ -1,0 +1,72 @@
+{
+  "modelo": {
+    "calibrador_servido": "bruto",
+    "selecao_calibrador": [
+      {
+        "calibrador": "bruto",
+        "brier_selecao": 0.1339317013471505,
+        "auc_selecao": 0.7838284699641087,
+        "pd_media": 0.22354627281701497,
+        "taxa_observada": 0.22088888888888888
+      },
+      {
+        "calibrador": "platt",
+        "brier_selecao": 0.1341093312450134,
+        "auc_selecao": 0.7838284699641087,
+        "pd_media": 0.21854786175958582,
+        "taxa_observada": 0.22088888888888888
+      },
+      {
+        "calibrador": "isotonico",
+        "brier_selecao": 0.1345061322338686,
+        "auc_selecao": 0.7828855620890202,
+        "pd_media": 0.21760922544652134,
+        "taxa_observada": 0.22088888888888888
+      }
+    ],
+    "teste_bruto": {
+      "auc": 0.7774730891014949,
+      "ks": 0.4224591828110386,
+      "brier": 0.13484752103925174,
+      "pd_media_prevista": 0.22367319247049036,
+      "taxa_observada": 0.2212
+    },
+    "teste_servido": {
+      "auc": 0.7774730891014949,
+      "ks": 0.4224591828110386,
+      "brier": 0.13484752103925174,
+      "pd_media_prevista": 0.22367319247049036,
+      "taxa_observada": 0.2212
+    },
+    "max_desvio_decil": 0.03228378617260347
+  },
+  "premissas": {
+    "margem_anual": 0.18,
+    "lgd": 0.75,
+    "moeda": "NT$",
+    "brl_por_unidade": 0.18,
+    "decisao": "gestao de conta (manter ou cortar linha rotativa)"
+  },
+  "thresholds": {
+    "break_even_analitico": 0.1935483870967742,
+    "otimo_empirico_calib": 0.26371859296482414,
+    "maxima_f1_calib": 0.34,
+    "plato_1pct": [
+      0.1691959798994975,
+      0.1791457286432161
+    ]
+  },
+  "resultado": {
+    "lucro_sem_politica": -8034232.260000005,
+    "lucro_threshold_050": 16855382.849999994,
+    "lucro_break_even": 20900847.72,
+    "ganho_vs_050_absoluto": 4045464.870000005,
+    "ganho_vs_050_pct": 0.2400102629528825,
+    "taxa_aprovacao": 0.6210666666666667,
+    "inadimplencia_da_carteira": 0.10884499785315586
+  },
+  "estabilidade": {
+    "psi_calib_teste": 0.0014921923235875758,
+    "psi_drift_simulado": 0.026608746516641323
+  }
+}
